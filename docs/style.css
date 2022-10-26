@@ -12,11 +12,12 @@ body {
 }
 
 .title {
+  margin: 0;
   text-align: center;
   color: #467745 ;
   font-family: 'EB Garamond', serif;
   font-weight: normal;
-  font-size: 48px; /*36px on mobile & text is alligned to left when smaller 520px */
+  font-size: 48px;
 }
 
 .input-fields {
@@ -26,22 +27,37 @@ body {
   padding: 20px;
 }
 
+.row {
+  margin-bottom: 50px;
+}
+
 .subject {
+  width: 100%;
   font-size: 16px;
   font-weight: medium;
   color: #467745 ;
-  max-width: 480px; /*smaller than 520px 100%-40px, padding on parent 20px done*/
+  max-width: 480px;
   max-height: 64px;
   border: 0;
+  margin-bottom: 20px;
+}
+
+.subject::placeholder {
+  color: #467745;
 }
 
 .notes {
+  width: 100%;
   font-size: 16px;
   font-weight: medium;
   color: #467745 ;
-  max-width: 480px; /*smaller than 520px 100%-40px, padding on parent 20px done*/
+  max-width: 480px;
   max-height: 120px; 
   border: 0;
+}
+
+.notes::placeholder {
+  color: #467745;
 }
 
 .checkbox {
@@ -52,20 +68,20 @@ body {
   font-size: 16px;
   font-weight: medium;
   color: #467745;
-   /* text break automatically when vp smaller than text length*/ 
-   /*smaller than 520px 100%-40px */
-   /* padding on parent 20px done*/
 }
 
 .save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'EB Garamond', serif;
   font-size: 21px;
   font-weight: normal;
   color: #F7E4D4;
   border: 0;
-  border-radius: 50%;
+  border-radius: 10rem;
   background-color: #467745;
-  padding: 5px;
+  padding: 30px;
   max-width: 280px;
   max-height: 80px;
   letter-spacing: 0.2em;
