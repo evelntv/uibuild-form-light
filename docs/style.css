@@ -28,18 +28,26 @@ body {
 }
 
 .row {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.row-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subject {
   width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
   font-size: 16px;
   font-weight: medium;
   color: #467745 ;
   max-width: 480px;
   max-height: 64px;
   border: 0;
-  margin-bottom: 20px;
+  
 }
 
 .subject::placeholder {
@@ -48,6 +56,8 @@ body {
 
 .notes {
   width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
   font-size: 16px;
   font-weight: medium;
   color: #467745 ;
@@ -92,9 +102,7 @@ body {
     font-size: 36px;
     text-align: left;
   }
-}
 
-@media (max-width: 520px) {
   .checkbox-text {
     word-wrap: break-word;
   }
