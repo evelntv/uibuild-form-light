@@ -1,0 +1,85 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #F7E4D4;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  color: #467745 ;
+  font-family: 'EB Garamond', serif;
+  font-weight: normal;
+  font-size: 48px; /*36px on mobile & text is alligned to left when smaller 520px */
+}
+
+.input-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.subject {
+  font-size: 16px;
+  font-weight: medium;
+  color: #467745 ;
+  max-width: 480px; /*smaller than 520px 100%-40px, padding on parent 20px done*/
+  max-height: 64px;
+  border: 0;
+}
+
+.notes {
+  font-size: 16px;
+  font-weight: medium;
+  color: #467745 ;
+  max-width: 480px; /*smaller than 520px 100%-40px, padding on parent 20px done*/
+  max-height: 120px; 
+  border: 0;
+}
+
+.checkbox {
+  border: 0;
+}
+
+.checkbox-text {
+  font-size: 16px;
+  font-weight: medium;
+  color: #467745;
+   /* text break automatically when vp smaller than text length*/ 
+   /*smaller than 520px 100%-40px */
+   /* padding on parent 20px done*/
+}
+
+.save {
+  font-family: 'EB Garamond', serif;
+  font-size: 21px;
+  font-weight: normal;
+  color: #F7E4D4;
+  border: 0;
+  border-radius: 50%;
+  background-color: #467745;
+  padding: 5px;
+  max-width: 280px;
+  max-height: 80px;
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 520px) {
+  .checkbox-text {
+    word-wrap: break-word;
+  }
+}
