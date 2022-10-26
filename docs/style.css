@@ -28,7 +28,7 @@ body {
 }
 
 .row {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .row-submit {
@@ -100,7 +100,7 @@ body {
   border: 0;
   border-radius: 10rem;
   background-color: #467745;
-  padding: 30px 70px;
+  padding: 30px 65px;
   max-width: 280px;
   max-height: 80px;
   letter-spacing: 0.2em;
@@ -110,6 +110,7 @@ body {
   .title {
     font-size: 36px;
     text-align: left;
+    padding-left: 20px;
   }
 
   .checkbox-text {
